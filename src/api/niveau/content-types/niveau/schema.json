@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "niveaus",
+  "info": {
+    "singularName": "niveau",
+    "pluralName": "niveaus",
+    "displayName": "Niveau",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "statut": {
+      "type": "string"
+    },
+    "citation": {
+      "type": "text"
+    },
+    "commentaires": {
+      "type": "text"
+    },
+    "niveau": {
+      "type": "integer"
+    }
+  }
+}

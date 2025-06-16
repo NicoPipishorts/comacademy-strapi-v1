@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dicos",
+  "info": {
+    "singularName": "dico",
+    "pluralName": "dicos",
+    "displayName": "Dico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Categories": {
+      "type": "string",
+      "required": true
+    },
+    "Tags": {
+      "type": "string"
+    },
+    "Word": {
+      "type": "string",
+      "required": true
+    },
+    "Definition": {
+      "type": "text",
+      "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false
+    },
+    "Coef": {
+      "type": "integer"
+    },
+    "favorite_dico": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::favorite-dico.favorite-dico",
+      "inversedBy": "words"
+    },
+    "aLaUne": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "questions",
+  "info": {
+    "singularName": "question",
+    "pluralName": "questions",
+    "displayName": "Question",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "QUESTION": {
+      "type": "text",
+      "required": false
+    },
+    "CATEGORIE": {
+      "type": "string"
+    },
+    "TAG": {
+      "type": "string"
+    },
+    "ANSWER": {
+      "type": "boolean"
+    },
+    "REPONSE": {
+      "type": "text"
+    },
+    "ACTIVE": {
+      "type": "boolean",
+      "default": true
+    },
+    "SENSIBILITE": {
+      "type": "text"
+    },
+    "COEF": {
+      "type": "integer"
+    },
+    "favorite_question": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::favorite-question.favorite-question",
+      "inversedBy": "questions"
+    },
+    "game_session_questions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::game-question.game-question",
+      "mappedBy": "questionId"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feed_posts",
+  "info": {
+    "singularName": "feed-post",
+    "pluralName": "feed-posts",
+    "displayName": "FeedPost",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titre": {
+      "type": "string"
+    },
+    "Text": {
+      "type": "text"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "audios",
+        "videos"
+      ]
+    },
+    "SousTitre": {
+      "type": "string"
+    },
+    "Immediat": {
+      "type": "boolean"
+    },
+    "Type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::feed-post-type.feed-post-type"
+    },
+    "Credits": {
+      "type": "string"
+    }
+  }
+}

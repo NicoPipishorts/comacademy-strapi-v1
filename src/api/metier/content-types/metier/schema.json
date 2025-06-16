@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metiers",
+  "info": {
+    "singularName": "metier",
+    "pluralName": "metiers",
+    "displayName": "Metier",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "METIER": {
+      "type": "string"
+    },
+    "ROLE_MISSIONS": {
+      "type": "text"
+    },
+    "COMPETENCES": {
+      "type": "text"
+    },
+    "METIERS_SIMILAIRES": {
+      "type": "text"
+    },
+    "FORMATION": {
+      "type": "text"
+    },
+    "SALAIRES": {
+      "type": "text"
+    },
+    "NOTRE_AVIS": {
+      "type": "text"
+    },
+    "VERBATIM": {
+      "type": "text"
+    },
+    "BREF": {
+      "type": "text"
+    },
+    "PORTRAIT_CHINOIS": {
+      "type": "text"
+    },
+    "favorite_metier": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::favorite-metier.favorite-metier",
+      "inversedBy": "metiers"
+    },
+    "CATEGORIE": {
+      "type": "string"
+    },
+    "TITRE": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "citations",
+  "info": {
+    "singularName": "citation",
+    "pluralName": "citations",
+    "displayName": "Citation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "AUTEUR": {
+      "type": "string",
+      "required": true
+    },
+    "CATEGORIE": {
+      "type": "string"
+    },
+    "CITATION": {
+      "type": "text",
+      "required": true
+    },
+    "VISIBLE": {
+      "type": "boolean"
+    }
+  }
+}

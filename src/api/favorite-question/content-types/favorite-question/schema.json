@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorite_questions",
+  "info": {
+    "singularName": "favorite-question",
+    "pluralName": "favorite-questions",
+    "displayName": "Favorite-Question",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "questions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::question.question",
+      "mappedBy": "favorite_question"
+    }
+  }
+}

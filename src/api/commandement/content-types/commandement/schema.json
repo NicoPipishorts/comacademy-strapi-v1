@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commandements",
+  "info": {
+    "singularName": "commandement",
+    "pluralName": "commandements",
+    "displayName": "Commandement",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::categorie.categorie",
+      "mappedBy": "commandements"
+    },
+    "Theme": {
+      "type": "text"
+    },
+    "Astuce_1": {
+      "type": "text"
+    },
+    "Astuce_2": {
+      "type": "text"
+    },
+    "Astuce_3": {
+      "type": "text"
+    },
+    "Astuce_4": {
+      "type": "text"
+    },
+    "Astuce_5": {
+      "type": "text"
+    },
+    "Astuce_7": {
+      "type": "text"
+    },
+    "Astuce_8": {
+      "type": "text"
+    },
+    "Astuce_9": {
+      "type": "text"
+    },
+    "Astuce_10": {
+      "type": "text"
+    },
+    "Astuce_11": {
+      "type": "text"
+    },
+    "Active": {
+      "type": "boolean"
+    }
+  }
+}

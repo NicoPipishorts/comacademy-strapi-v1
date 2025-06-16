@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "feed_post_types",
+  "info": {
+    "singularName": "feed-post-type",
+    "pluralName": "feed-post-types",
+    "displayName": "FeedPostType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

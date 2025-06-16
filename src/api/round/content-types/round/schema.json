@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rounds",
+  "info": {
+    "singularName": "round",
+    "pluralName": "rounds",
+    "displayName": "Round"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "commentaires": {
+      "type": "text"
+    },
+    "points": {
+      "type": "integer"
+    }
+  }
+}

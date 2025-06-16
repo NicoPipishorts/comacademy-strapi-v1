@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorite_metiers",
+  "info": {
+    "singularName": "favorite-metier",
+    "pluralName": "favorite-metiers",
+    "displayName": "Favorite-Metier",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "biginteger",
+      "required": true
+    },
+    "metiers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::metier.metier",
+      "mappedBy": "favorite_metier"
+    }
+  }
+}

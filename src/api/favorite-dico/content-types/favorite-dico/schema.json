@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "favorite_dicos",
+  "info": {
+    "singularName": "favorite-dico",
+    "pluralName": "favorite-dicos",
+    "displayName": "Favorite-Dico",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userId": {
+      "type": "biginteger"
+    },
+    "words": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::dico.dico",
+      "mappedBy": "favorite_dico"
+    }
+  }
+}

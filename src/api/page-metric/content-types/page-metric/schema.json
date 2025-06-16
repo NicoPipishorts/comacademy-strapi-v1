@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_metrics",
+  "info": {
+    "singularName": "page-metric",
+    "pluralName": "page-metrics",
+    "displayName": "PageMetric",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Page": {
+      "type": "string",
+      "required": true
+    },
+    "Count": {
+      "type": "biginteger",
+      "required": true,
+      "default": "0"
+    }
+  }
+}

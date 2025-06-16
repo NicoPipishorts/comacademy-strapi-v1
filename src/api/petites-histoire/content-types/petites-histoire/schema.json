@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "petites_histoires",
+  "info": {
+    "singularName": "petites-histoire",
+    "pluralName": "petites-histoires",
+    "displayName": "PetitesHistoire",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titre": {
+      "type": "string"
+    },
+    "videoLink": {
+      "type": "string"
+    },
+    "visible": {
+      "type": "boolean"
+    },
+    "videoId": {
+      "type": "string"
+    },
+    "videoUri": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    }
+  }
+}

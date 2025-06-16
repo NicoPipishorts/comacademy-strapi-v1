@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "playlist_contents",
+  "info": {
+    "singularName": "playlist-content",
+    "pluralName": "playlist-contents",
+    "displayName": "PlaylistContent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "playlistId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::playlist.playlist",
+      "inversedBy": "playlist_contents"
+    },
+    "question": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::question.question"
+    },
+    "dico": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::dico.dico"
+    },
+    "metier": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::metier.metier"
+    }
+  }
+}

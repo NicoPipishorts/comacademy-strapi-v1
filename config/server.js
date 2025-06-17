@@ -18,13 +18,13 @@ module.exports = ({ env }) => {
 	// }
 
 	return {
-		host: env("HOST", "0.0.0.0"),
-		port: env.int("PORT", 1337),
+		// host: env("HOST", "0.0.0.0"),
+		// port: env.int("PORT", 1337),
 		cron: {
 			enabled: true,
 			tasks: crontTasks,
 		},
-		url: url,
+		// url: url,
 		app: {
 			keys: env.array("APP_KEYS"),
 		},
